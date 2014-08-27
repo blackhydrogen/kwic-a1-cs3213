@@ -1,6 +1,4 @@
-package kkk;
-
-import java.util.Vector;
+import java.util.*;
 
 public abstract class Filter<Datatype> {
 	private Vector<Pipe<Datatype>> pipes;

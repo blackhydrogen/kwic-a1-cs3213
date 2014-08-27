@@ -1,10 +1,14 @@
-package kkk;
+import java.util.*;
 
-public class OutputFilter extends Filter<String> {
-
+public class OutputFilter extends Filter<DataContainer> {
 	@Override
-	String execute(String obj) {
-		System.out.println("output " + obj);
+	DataContainer execute(DataContainer data) {
+
+		ArrayList<String> titles = data.getTitles();
+		for(int i = 0; i < titles.size(); i++) {
+			System.out.println(titles.get(i));
+		}
+
 		return null;
 	}
 

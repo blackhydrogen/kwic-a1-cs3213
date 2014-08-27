@@ -1,15 +1,23 @@
-package kkk;
-
+import java.util.*;
 
 public class Main {
 	public static void main(String args[]) {
-		FormatFilter f1 = new FormatFilter();
-		VerifierFilter f2 = new VerifierFilter();
-		OutputFilter f3 = new OutputFilter();
 
-		new Pipe<String>(f1, f3);
-		new Pipe<String>(f1, f2);
-		new Pipe<String>(f2, f3);
-		f1.inputData("hello");
+		InputFilter f1 = new InputFilter();
+		CShiftFilter f2 = new CShiftFilter();
+		VerifierFilter f3 = new VerifierFilter();
+		SorterFilter f4 = new SorterFilter();
+		FormatFilter f5 = new FormatFilter();
+		OutputFilter f6 = new OutputFilter();
+
+		new Pipe<DataContainer>(f1, f2);
+		new Pipe<DataContainer>(f2, f3);
+		new Pipe<DataContainer>(f3, f4);
+		new Pipe<DataContainer>(f4, f5);
+		new Pipe<DataContainer>(f5, f6);
+
+		DataContainer data = new DataContainer();
+
+		f1.inputData(data);
 	}
 }

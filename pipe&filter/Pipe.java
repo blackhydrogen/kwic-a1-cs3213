@@ -1,4 +1,4 @@
-package kkk;
+import java.util.*;
 
 public class Pipe<Datatype> {
 	private Filter<Datatype> inputFilter;
