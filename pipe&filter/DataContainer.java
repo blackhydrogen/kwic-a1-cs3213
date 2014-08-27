@@ -12,20 +12,20 @@ public class DataContainer {
 	}
 
 	//Getters
-	public ArrayList getTitles() {
+	public ArrayList<String> getTitles() {
 		return this.titles;
 	}
 
-	public ArrayList getNonKeywords() {
+	public ArrayList<String> getNonKeywords() {
 		return this.nonKeywords;
 	}
 
 	//Setters
-	public void setTitles(ArrayList titles) {
+	public void setTitles(ArrayList<String> titles) {
 		this.titles = titles;
 	}
 
-	public void setNonKeywords(ArrayList nonKeywords) {
+	public void setNonKeywords(ArrayList<String> nonKeywords) {
 		this.nonKeywords = nonKeywords;
 	}
 
