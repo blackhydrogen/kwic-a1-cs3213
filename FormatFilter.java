@@ -14,6 +14,10 @@ public class FormatFilter extends Filter<DataContainer> {
 
 	private String format(String title) {
 		int index = title.indexOf(' ');
-		return title.toUpperCase().substring(0,index).concat(title.substring(index).toLowerCase());
+		
+		if(index == -1)
+      return title.toUpperCase();
+    else
+      return title.toUpperCase().substring(0,index).concat(title.substring(index).toLowerCase());
 	}
 }
