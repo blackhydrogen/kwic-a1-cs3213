@@ -16,8 +16,6 @@ public class Main {
 		new Pipe<DataContainer>(f4, f5);
 		new Pipe<DataContainer>(f5, f6);
 
-		DataContainer data = new DataContainer();
-
-		f1.inputData(data);
+		f1.inputData(null);
 	}
 }

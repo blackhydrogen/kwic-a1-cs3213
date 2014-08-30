@@ -3,6 +3,9 @@ import java.util.*;
 public class InputFilter extends Filter<DataContainer> {
 	@Override
 	DataContainer execute(DataContainer data) {
+    
+    //data should be null at this point, this creating a new instance.
+    data = new DataContainer();
 
 		int numTitles, numNonKeywords;
 		Scanner sc = new Scanner(System.in);
