@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class CShiftFilter extends Filter<DataContainer> {
+public class CircularShiftFilter extends Filter<DataContainer> {
 	@Override
 	DataContainer execute(DataContainer data) {
 

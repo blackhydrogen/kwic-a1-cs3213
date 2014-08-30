@@ -4,7 +4,7 @@ public class Main {
 	public static void main(String args[]) {
 
 		InputFilter f1 = new InputFilter();
-		CShiftFilter f2 = new CShiftFilter();
+		CircularShiftFilter f2 = new CircularShiftFilter();
 		VerifierFilter f3 = new VerifierFilter();
 		SorterFilter f4 = new SorterFilter();
 		FormatFilter f5 = new FormatFilter();
